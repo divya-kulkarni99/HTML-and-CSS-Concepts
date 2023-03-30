@@ -1,0 +1,68 @@
+.panels{
+
+    grid-column:  span 12;
+}
+.panel{
+    grid-column: span 12;
+    display: grid;
+    grid-template-areas:
+    " heading1 image"
+    "content image";
+    grid-template-columns: 70% 1fr;
+
+    border: 1px solid;
+
+
+    background-color: rgb(225, 233, 240);
+}  
+.panel-image{
+    
+    grid-area: image;
+    align-items: start;
+
+    margin: 1rem;
+    height: 125px;
+    width: 125px;
+
+    padding-right: 1rem;
+
+
+}
+.panel-heading{
+    grid-area: heading1;
+
+    font-size: x-larger;
+}
+
+.panel-body{
+    grid-area: content;
+}
+
+
+
+@media screen and (min-width: 44rem){
+    .panels{
+
+        grid-column:  span 12;
+    }
+    
+    .panel{
+        /* border-style: solid; */
+        border: 2px solid;
+        margin: 1rem;
+    
+        background-color: #edcfe9;
+    }
+    
+    .panel-image{
+        grid-area: image;
+        align-items: start;
+    
+        margin: 1rem;
+        height: 200px;
+        width: 200px;
+    
+    
+    }
+    
+}
