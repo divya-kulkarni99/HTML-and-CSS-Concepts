@@ -1,0 +1,154 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    
+    background-color:#FADADD;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: pink;
+}
+
+.register{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+
+    gap: 1rem; 
+    padding-bottom: 5rem;
+    
+}
+
+label,label > select{
+    grid-column: 4/10;
+
+    font-size: larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+}
+
+input,select,.register__checkbox-label{
+    grid-column: 4/10;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button{
+    grid-column: 4/10;
+    
+    font-size: larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.register__name-error{
+    display: none;
+    grid-column: 4/10;
+    
+    color: red;
+}
+.register__name-error.register__name--invalid{
+    display: initial;
+}
+
+.register__confirm-text:empty{
+    display: none;
+}
+.register__confirm-text{
+    grid-column: 4/10;
+
+    color: red;
+    
+    font-size: larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+} 
+  
+
+.footer{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    background-color:pink ;
+    padding: 1rem;
+
+    list-style: none;
+}
+
+@media screen and (min-width: 40rem){
+    html,body{
+        height: 100%;
+        
+        background-color: #D5F3FE;
+    }
+    header{
+        display: flex;
+        justify-content: center;
+    
+        background-color: #66D3FA;
+    }
+    .register{
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+    
+        gap: 1rem; 
+        padding: 5rem;
+      
+    }
+    
+    
+    label,label > select{
+        grid-column: 2/6;
+    
+        font-size: larger;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+       
+    }
+    
+    
+    input,select,.register__checkbox-label{
+        grid-column: 6/10;
+    
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+   
+    button{
+        grid-column: 4/8;
+        
+        font-size: larger;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .register__name-error{
+        display: none;
+
+        color: red;
+    }
+    .register__name-error.register__name--invalid{
+        display: initial;
+        grid-column: 4/8;
+    }
+   .register__confirm-text:empty{
+        display: none;
+   }
+   .register__confirm-text{
+        color: red;
+    
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+   } 
+   .footer{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        background-color: #66D3FA;
+        padding: 1rem;
+
+        list-style: none;
+   }
+  
+}
