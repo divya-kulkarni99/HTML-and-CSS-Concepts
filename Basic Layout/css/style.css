@@ -1,0 +1,88 @@
+/* Code for header tag
+1. Added background color
+2. Convert unordered list into columns using flex
+3. Assigning grid-area as header to specify area is header("header in #homepage container)
+4. Using hover Pesudo selector make the tabs hover
+*/
+.menu{
+    list-style: none;
+    margin: 0;
+    background-color: plum;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .menu li a{
+  padding: 20px;
+  }
+  
+  .menu li a:hover{
+    background-color: rebeccapurple;
+    color: white;
+  }
+  
+  header{
+    grid-area: header;
+  }
+  
+  /* Code for local-menu class
+  1. Added background color
+  2. Convert unordered list into columns using flex 
+  3. Add border to right 
+  4. Assigning grid-area as localmenu to specify area is localmenu("localmenu in #homepage container)
+  5. Using hover Pesudo selector make the tabs hover
+  */
+  .local-menu{
+      
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid black;
+    grid-area: localmenu;
+    
+  }
+  
+  .local-menu ul li{
+    list-style-type: none;
+    padding: 15px 15px 15px 5px;
+    justify-self: center;
+     align-self:center;  
+  }
+  .local-menu ul li:hover{
+    background-color: plum;
+  }
+  
+  /* Code for main tag
+  1. Added background color 
+  2. Assigning grid-area as main to specify area is main("main in #homepage container)
+  */
+  main {
+    background-color: pink;
+    grid-area: main;
+    padding-left: 10px;
+    grid-area: main;
+  }
+  
+  /* Code for footer tag
+  1. Added  background color
+  2. Assigning grid-area as localmenu to specify area is localmenu("localmenu in #homepage container)
+  */
+  
+  footer{
+    padding: 10px 5px 10px 5px;
+    background-color: plum;
+    grid-area: footer; 
+  }
+  /* Code for main and .localmenu to be display in columns using grid for the page
+  */
+  #homepage{
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "localmenu main"
+    "footer footer";
+    grid-template-columns: 20% 1fr;
+  
+  }
