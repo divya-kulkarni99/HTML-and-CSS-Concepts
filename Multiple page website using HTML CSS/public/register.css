@@ -1,0 +1,371 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    margin: 0;
+
+    background-color: pink;
+
+}
+header{
+    grid-column:  span 12;
+
+    position: relative;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-column:  span 12;
+
+    background-color: pink;
+}
+img{ 
+    height: 200px;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+
+}
+
+.menubar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    grid-column: span 12;
+    
+    position: absolute;
+    top : 250px;
+    left:0;
+    right:0;
+    font-size: larger;
+
+    background-color: plum;
+    padding: 0.5rem;
+
+    list-style: none;
+  
+   }
+   
+
+
+  li button{
+   
+    border: none;
+
+    background-color: plum;
+    color: white;
+
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: inherit;
+    
+  }
+ 
+  button li{
+    background-color: rebeccapurple;
+    color: white;
+
+    padding: 1rem;
+   
+  }
+
+.menubar li:hover ul,.menubar li:focus-within ul{
+    height: auto;
+}
+.menubar ul {
+    position: absolute;
+
+    height: 0;
+
+    background-color: rebeccapurple;
+
+    list-style: none;
+    overflow: hidden;
+
+}
+   
+   .menubar li a{
+    color: white;
+
+    gap: 1px;
+   }
+   
+
+   .menubar li a:hover,li button:hover{
+    padding: 1rem;
+
+    background-color: rebeccapurple;
+    color: white;
+
+  } 
+
+span.name,span.email,span.Pass,span.req{
+    color: red;
+}
+.mainclass{
+    grid-column: span 12;
+    
+    
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#register{
+    display: grid;
+    grid-template-areas:
+  
+    "name "
+    "input_text"
+    "email"
+    "emailid"
+    "checkbox"
+    "selectlabel" 
+    "optionslabel"
+    "button";
+    grid-template-columns: 50% 1fr;
+  
+  }
+
+  
+  .name_label{
+    grid-area: name;
+ 
+
+  }
+  input{
+    grid-area: input_text;
+    
+
+  }
+  .email_label{
+    grid-area: email;
+   
+  }
+  .email{
+    grid-area: emailid;
+  
+  }
+  .checkbox_label{
+    grid-area: checkbox;
+  
+  }
+ 
+  .select_label{
+    grid-area: selectlabel;
+  
+  }
+  select{
+    grid-area: optionslabel;
+  
+  }
+  button{
+    grid-area: button;
+   
+  }
+footer{
+    grid-column:  span 12;
+}
+.footer{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    margin: 0;  
+
+    list-style: none;
+
+
+}
+
+button{
+   
+    font-size: larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media screen and (min-width: 50rem){
+
+    html,body{
+        height: 100%;
+        margin: 0;
+
+        background-color: #D5F3FE;
+    }
+    header{
+        position: relative;
+    }
+    .headerclass{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-column:  span 12;
+    
+        background-color: #66D3FA;
+        
+    }
+    img{
+        padding: 5px;
+       }
+     
+    
+     .menubar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        grid-column: span 12;
+    
+        position: absolute;
+        top : 245px;
+        left:0;
+        right:0;
+        
+        padding: 0.65rem;
+        background-color: #4279B4;
+    
+        list-style: none;
+       }
+       
+    
+    
+      .menubar li a:hover,li button:hover{
+
+        padding: 1rem;
+
+        background-color: #3C99DC;
+        color: white;
+      }
+    
+    
+      li button{
+
+        border: none;
+    
+        background-color: #4279B4;
+        color: white;
+
+        text-decoration: underline;
+        cursor: pointer;
+        font-size: inherit;
+        
+      }
+     
+      button li{
+        padding: 1rem;
+
+        background-color: #3C99DC;
+        color: white;
+       
+      }
+    
+    .menubar li:hover ul,.menubar li:focus-within ul{
+        height: auto;
+    }
+    .menubar ul {
+        position: absolute;
+    
+        height: 0;
+        overflow: hidden;
+
+        background-color: #3C99DC;
+
+        list-style: none;
+    }
+    
+   .mainclass{
+        grid-column: 4/10;
+        
+        font-size: large;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+
+    
+    #register{
+        display: grid;
+        grid-template-areas:
+        "name input_text"
+        "email emailid"
+        "checkbox checkbox"
+        "selectlabel optionslabel"
+        "button button";
+        grid-template-columns: 50% 1fr;
+      
+      }
+  
+      
+      .name_label{
+        grid-area: name;
+        grid-row-start: 1;
+        grid-column-start: 1;
+   
+      }
+      input{
+        grid-area: input_text;
+        grid-row-start: 1;
+        grid-column-start: 2;
+    
+      }
+      .email_label{
+        grid-area: email;
+        grid-row-start: 2;
+        grid-column-start: 1;
+      }
+      .email{
+        grid-area: emailid;
+        grid-row-start: 2;
+        grid-column-start: 2;
+      }
+      .checkbox_label{
+        grid-area: checkbox;
+        grid-row-start: 3;
+        grid-column-start: 2;
+      }
+     
+      .select_label{
+        grid-area: selectlabel;
+        grid-row-start: 4;
+        grid-column-start: 1;
+      }
+      select{
+        grid-area: optionslabel;
+        grid-row-start: 4;
+        grid-column-start: 2;
+      }
+      button{
+        grid-area: button;
+        grid-row-start: 6;
+        grid-column-start: 2;
+      }
+    footer{
+        grid-column: span 12;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        grid-column: span 12;
+
+        margin: 0;
+        padding: 1rem;
+
+        background-color: #66D3FA;
+    
+        list-style: none;
+    }
+    .footer li a{
+        color: white;
+    }
+    .footer a:hover{
+        padding: 1rem;
+        
+        background-color: #3C99DC;
+        color: white;
+    
+      }
+
+}

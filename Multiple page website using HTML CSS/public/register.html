@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width">
+        <title>Registration Your Visit</title>
+        <link rel="stylesheet" href="register.css">
+    </head>
+
+    <body>
+        <div id="container">
+
+            <header class="headerclass">
+            
+                <a href="file:///Users/divyakulkarni/Desktop/info6150/student-divya-kulkarni99/project1/public/index.html">
+                <img src="https://images.unsplash.com/photo-1536938731386-c803cbb43afe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80" alt="logo" />
+                </a>
+                <h1>Register Your Visit</h1>  
+            </header>
+
+            <ul class="menubar">
+                <li><a href= "index.html">Home</a></li>
+                <li><a href= "about.html">About Llamas</a></li>
+                <li>
+                    <button type="button">Contact Us</button>
+                    <ul>
+                        <li><a href= "email.html">llamareservior@gmail.com</a></li>
+                        <li><a href= "contact.html">+1(510)-452-4522</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <main class="mainclass">
+                <h6>
+                    <span class="req">*</span>Represents required field
+                </h6>
+                
+                <form action="/submit" method="POST" id="register">
+
+                    <label class="name_label"for="name">Name: 
+                        <span class="name">*</span>
+                    </label>
+                        <input name="name" type="text" required/>
+
+                    <label class="email_label" for = "email">Email-id:
+                        <span class = "email">*</span> 
+                    </label>
+                    <input class = "email" type = "email" placeholder="example@gmail.com" required/>
+
+                    <label class="checkbox_label" for="lunch">
+                        <input name = "lunch" type="checkbox" />
+                        <span class = "lunch">Do you want to include lunch</span>
+                    </label>
+
+                    <label class="select_label" for="Pass"> Select type of Pass <span class="Pass">*</span>
+                    </label>
+                        <select name="Pass" required>
+                            <option value="">Please Select</option>
+                            <option value="Silver Pass">Silver Pass</option>
+                            <option value="Gold Pass">Gold Pass</option>
+                            <option value="Platinum Pass">Platinum Pass</option>
+                        </select>
+
+                    <button type ="Register">Register</button>
+                </form>   
+            </main>
+
+            <footer>
+                <ul class="footer">
+                    <li><a href= "privacy.html">Privacy Policy</a></li>
+                    <li><a href= "customer.html">Customer Services</a></li>
+                    <li><a href= "experiences.html">Previous reviews</a></li>
+                
+                </ul>
+            </footer>
+        </div>
+    </body>
+</html>
