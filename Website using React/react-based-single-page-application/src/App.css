@@ -1,0 +1,23 @@
+.app{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+
+    height: 100%;
+
+    background-color: var(--primary-bg);
+}
+
+.app.dark{
+    height: 100%;
+    
+    --primary-title-color:black;
+    --primary-bg:lightgrey;
+    --header-bg:darkgrey;
+    --footer-bg:darkgrey;
+    --primary-links:black;
+    --primary-links-hover:white;
+    --primary-menu:rgb(71, 69, 72);
+    --primary-menu-items:rgb(160, 155, 162);
+
+
+}

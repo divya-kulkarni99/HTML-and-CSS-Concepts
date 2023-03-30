@@ -1,0 +1,49 @@
+*,*::before, *::after{
+  box-sizing: border-box;
+}
+
+:root{
+  --primary-title-color:darkblue;
+  --primary-bg:#D5F3FE;
+  --header-bg:#66D3FA;
+  --footer-bg:#66D3FA;
+  --primary-links:black;
+  --primary-links-hover:white;
+  --primary-menu:#4279B4;
+  --primary-menu-items:mediumblue;
+  
+  
+
+}
+
+html,body{
+  height: 100%;
+  margin: 0;
+
+  background-color:var( --primary-bg);
+}
+
+#root{
+  height: 100%;
+}
+
+@media screen and (min-width: 50rem){
+
+  :root{
+    --primary-title-color:darkmagenta;
+    --primary-bg:#FADADD;
+    --header-bg:pink;
+    --footer-bg:pink;
+    --primary-links:purple;
+    --primary-links-hover:white;
+    --primary-menu:rebeccapurple;
+    --primary-menu-items:orchid;
+  }
+
+  html,body{
+    height: 100%;
+    margin: 0;
+  
+    background-color:var( --primary-bg);
+  }
+}
