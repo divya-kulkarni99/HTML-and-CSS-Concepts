@@ -1,8 +1,3 @@
-# Project 1: Multi-page Website
-
-
-** Due Mon Oct 17, 11:59pm PT **
-
 ## Goal
 
 You will create a website made of several HTML pages and related CSS to demonstrate the skills learned in class so far.
@@ -152,7 +147,7 @@ These are skills that I/TA(s) must be able to confirm you have an understanding 
 
 ## Additional Requirements
 - Follow the best practices from the course
-- Do not use any Javascript (JS) (soon!)
+- Do not use any Javascript (JS) 
 - Do not use float unless wrapping text around an image
 - Do not use tables or table-layouts unless showing a table of data
 - Do not use iframes or otherwise load external content except as explicitly allowed/directed by this README
@@ -168,13 +163,4 @@ These are skills that I/TA(s) must be able to confirm you have an understanding 
   - For any images that you personally own and used, list (in `images.txt`) the filename of that image as you have it in this project. We can recognize which images are yours and which were downloaded from unsplash by looking at the images and this `images.txt`.
   - Do NOT download and use random images from the internet/web.  Only your own images or from unsplash.
 
-## Submission Instructions
-
-* start from the up-to-date main branch (`git checkout main; git pull origin main`)
-* Create a feature branch named 'project1' (`git checkout -b project1`)
-* Add the necessary files to have the required features
-  - running `npm install` will create a `package-lock.json` file and a `node_modules` directory.  These should NOT be added to your commit.
-* add, commit, and push the branch to github
-* Create a PR to merge to main
-* Be sure to include the TA(s) and myself reviewer(s)
 
