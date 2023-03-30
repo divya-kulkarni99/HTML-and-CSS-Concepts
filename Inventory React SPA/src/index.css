@@ -1,0 +1,57 @@
+.counter{
+   
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  gap: 1rem; 
+  padding: 5rem;
+  
+}
+.counter__title{
+  font-size: 3rem;
+}
+
+.counter__display{
+  
+  font-size: 5rem;
+}
+
+.counter__button--increment{
+
+  font-size: 3rem;
+}
+.counter__button--decrement{
+  
+
+  font-size: 4rem;
+} 
+
+.counter__button--reorder{
+
+ padding:1rem;
+
+ color:white;
+ background-color: crimson;
+
+ font-size: 1rem;
+
+} 
+.counter:hover .counter__button--reorder{
+  animation-name: fadeIn;
+  animation-duration: 2s;
+
+ 
+
+}
+
+@keyframes fadeIn {
+  from{
+      
+      opacity: 0;
+  }
+  to {
+   
+    opacity: 1;
+  }
+}
