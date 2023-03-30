@@ -1,0 +1,106 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    margin: 0;
+
+    background-color: burlywood;
+
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content : center;
+}
+
+img{ 
+    height: 80px;
+}
+
+#register{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+
+    gap: 1rem; 
+    padding: 5rem;
+}
+
+
+
+span.name,span.email,span.tier,span.req{
+    color: red;
+}
+
+
+.footer{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    margin: 0;  
+
+    list-style: none;
+
+
+}
+
+
+
+label,label > select{
+    grid-column: 4/10;
+
+    font-size: larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+}
+input,select,.checkbox_label{
+    grid-column: 4/10;
+
+    font-size: larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+button{
+    grid-column: 4/10;
+    
+    font-size: larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media screen and (min-width: 50rem){
+
+    html,body{
+        background-color: honeydew;
+    }
+  
+   .footer{
+        display: flex;
+        flex-direction: row;
+        
+    }
+    label,label > select{
+        grid-column: 1/6;
+        display: flex;
+        justify-content: right;
+
+        font-size: large;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    input,select,.checkbox_label,.req_label{
+        grid-column: 6/10;
+        display: flex;
+        justify-content: left;
+
+        font-size: large;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    button{
+        grid-column: 6/8;
+        font-size: large;
+    }
+
+
+  
+}

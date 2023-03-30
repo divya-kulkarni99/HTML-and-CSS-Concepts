@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width">
+        <title>Registration Form</title>
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body>
+        <header class="headerclass">
+            <img src="https://www.adaptivewfs.com/wp-content/uploads/2020/07/logo-placeholder-image.png" alt="logo" />
+            <h1>Register for a webinar on Web Design</h1>  
+        </header>
+        <main class="mainclass">
+            <form action="/submit" method="POST" id="register">
+                <label class="req_label">
+                    <span class="req">*</span>Represents required field
+                </label>
+                <label class="name_label"for="name">Name: 
+                    <span class="name">*</span>
+                    </label>
+                        <input name="name" type="text" required/>
+
+                <label class="email_label" for = "email">Email-id:
+                    <span class = "email">*</span> 
+                </label>
+                <input id = "email" type = "email" placeholder="example@gmail.com" required/>
+                
+                <label class="checkbox_label" for="annoy_me">
+                    <input name = "annoy_me" type="checkbox" checked/>
+                    <span class = "annoy_me">Do you want us to send you annoying emails?</span>
+                </label>
+             
+                <label class="select_label" for="tier"> Select tier <span class="tier">*</span>
+                </label>
+                    <select name="tier" required>
+                        <option value="Please Select">Please Select</option>
+                        <option value="Silver tier">Silver tier</option>
+                        <option value="Gold tier">Gold tier</option>
+                        <option value="Platinum tier">Platinum tier</option>
+                    </select>
+                
+                <button type ="Register">Register</button>
+            </form>
+        </main>
+        <footer>
+            <ul class="footer">
+                <li><a href= "home.html">Home</a></li>
+                <li><a href= "terms.html">Terms</a></li>
+                <li><a href= "privacy_policy.html">Privacy Policy</a></li>
+                <li><a href= "contact.html">Contact</a></li>
+            </ul>
+        </footer>
+    </body>
+</html>
