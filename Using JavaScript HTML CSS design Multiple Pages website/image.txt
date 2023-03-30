@@ -1,0 +1,16 @@
+In index.html 
+1. logo image -logoImage" src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1743&q=80 
+2. Hamburger icon-https://css.gg/menu.css
+3.Panel image 1- http://placekitten.com/200/200
+4. Panel image 2-https://images.unsplash.com/photo-1618188644631-54528c4f8ef7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2809&q=80
+
+In Cats.html
+1. logo image -logoImage" src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1743&q=80 
+2. Hamburger icon-https://css.gg/menu.css
+Card images from 1 to 6
+3. https://placekitten.com/200/300?image=1
+4. https://placekitten.com/200/300?image=2
+5. https://placekitten.com/200/300?image=3
+6. https://placekitten.com/200/300?image=4
+7. https://placekitten.com/200/300?image=5
+8. https://placekitten.com/200/300?image=6
