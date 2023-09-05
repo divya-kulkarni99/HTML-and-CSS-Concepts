@@ -1,4 +1,3 @@
-
 # Overview:
 <p align="center">
   <a href="https://platform.socialtrustpr.com">
