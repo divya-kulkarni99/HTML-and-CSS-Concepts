@@ -39,6 +39,7 @@ Step 4. Setting up .env file
 ```text
 cd frontend
 ```
+
 create .env file add all the environmental variables from vercel deployment
 
 
