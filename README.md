@@ -1,7 +1,7 @@
 # Overview:
 <p align="center">
   <a href="https://platform.socialtrustpr.com">
- <img src="public/assets/images/landing-page-logo.png" width="300" height="250"></p>
+ <img src="public/assets/images/landing-page-logo.png" width="250" height="100"></p>
 <h1 align="center"><strong>Social Trust PR</strong></h1></a>
 
 <p> Social Trust PR helps customers request and manage their publicity and provides full transparency of the process. This app basically helps clients request articles from a company based on their topic of choice and other specifications like word count and deadline for delivery.</p>
